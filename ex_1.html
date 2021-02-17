@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    </style>
+
+    <!-- React CDNs -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+</head>
+
+<body>
+    <!-- Root element / all the application is loaded here -->
+    <div id="root">
+    </div>
+
+    <script>
+        // Declare and define variables.
+        var rootElement = document.getElementById('root');
+        // Use the React object and its createElement method to create an element to be rendered.
+        var myFirstReactEl = React.createElement('h1', null, 'Hello world!');
+        // render element.
+        ReactDOM.render(myFirstReactEl, rootElement);
+    </script>
+
+</body>
+
+</html>
