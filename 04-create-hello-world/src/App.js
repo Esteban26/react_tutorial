@@ -1,11 +1,14 @@
 import './App.css';
 
+//Components 
+import Header from './components/Header.jsx'
+
 function App() {
-  return (<img>
-    <h1>Hello world 1!</h1>
-    <h1>Hello world 2!</h1>
-    <img src="" alt="" />
-  </img>);
+  return (
+    <>
+        <Header />
+    </>
+  );
 }
 
 export default App;
