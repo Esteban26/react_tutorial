@@ -8,17 +8,12 @@ function App() {
   const age = '29'
   const login = true
 
-  return (login) ?
+  return (login) &&
     (
       <>
         <Header />
         <h1>My name is {name} and I'm {age} old.</h1>
       </>
-    ) : (
-        <>
-          <Header />
-          <h1>Usuario anónimo</h1>
-        </>
     )
 }
 
