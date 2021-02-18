@@ -4,9 +4,13 @@ import './App.css';
 import Header from './components/Header.jsx'
 
 function App() {
+  const name = 'Esteban'
+  const age = '29'
+
   return (
     <>
       <Header />
+      <h1>My name is {name} and I'm {age} old.</h1>
     </>
   );
 }
