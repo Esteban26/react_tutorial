@@ -58,6 +58,19 @@ class LifeCycle extends Component {
         console.log('Life Cycle Component -> Component did mount');
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('Life Cycle Component -> Should component update', nextProps, nextState, nextProps.surname !== this.state.surname);
+        return nextProps.surname !== this.state.surname;
+    }
+    
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('Life Cycle Component -> Component did update', prevProps, prevState, snapshot);
+    }
+
+    componentWillUnmount() {
+        // Finish this case
+    }
+
     // For this case we don't need to bind this because arrow functions use the parent context.
     handleChangeName = (evt) => {
         this.setState({
