@@ -1,8 +1,10 @@
-import React from 'react';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import Animal from '../components/Animal'
-import { nanoid as getNanoId } from 'nanoid'
+import Animal from '../components/Animal';
+import FirstClassComponent from '../components/FirstClassComponent';
+import EvtsWithArrowFn from '../components/EvtsWithArrowFn';
+import LifeCycle from '../components/LifeCycle';
+import { nanoid as getNanoId } from 'nanoid';
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -12,7 +14,6 @@ const useStyles = makeStyles({
         alignElements: 'center',
     }
 });
-
 
 const MainContent = () => {
     const classes = useStyles();
@@ -40,6 +41,11 @@ const MainContent = () => {
                         );
                     })
                 }
+            </Box>
+            <Box mt={10}>
+                <FirstClassComponent></FirstClassComponent>
+                <EvtsWithArrowFn></EvtsWithArrowFn>
+                <LifeCycle></LifeCycle>
             </Box>
         </Container>
     );
