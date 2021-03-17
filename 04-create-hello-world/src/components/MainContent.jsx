@@ -45,7 +45,7 @@ const MainContent = () => {
             <Box mt={10}>
                 <FirstClassComponent></FirstClassComponent>
                 <EvtsWithArrowFn></EvtsWithArrowFn>
-                <LifeCycle></LifeCycle>
+                <LifeCycle title="Custom title"></LifeCycle>
             </Box>
         </Container>
     );
