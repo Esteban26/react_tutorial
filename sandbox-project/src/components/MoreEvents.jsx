@@ -1,5 +1,5 @@
 import { React, Component } from 'react';
-import EventBtn from '../components/EventBtn';
+import EventBtn from './EventBtn';
 
 
 class MoreEvents extends Component {

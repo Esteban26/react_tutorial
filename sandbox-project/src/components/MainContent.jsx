@@ -1,11 +1,11 @@
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import Animal from '../components/Animal';
-import FirstClassComponent from '../components/FirstClassComponent';
-import EvtsWithArrowFn from '../components/EvtsWithArrowFn';
-import LifeCycle from '../components/LifeCycle';
-import MoreEvents from '../components/MoreEvents';
-import FirstForm from '../components/FirstForm';
+import Animal from './Animal';
+import FirstClassComponent from './FirstClassComponent';
+import EvtsWithArrowFn from './EvtsWithArrowFn';
+import LifeCycle from './LifeCycle';
+import MoreEvents from './MoreEvents';
+import FirstForm from './FirstForm';
 import { nanoid as getNanoId } from 'nanoid';
 import { makeStyles } from '@material-ui/core';
 
