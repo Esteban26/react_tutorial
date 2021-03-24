@@ -1,5 +1,6 @@
 import { React, Component } from 'react';
 import EventBtn from './EventBtn';
+import EventBtn2 from './EventBtn2';
 
 
 class MoreEvents extends Component {
@@ -15,18 +16,20 @@ class MoreEvents extends Component {
 
     handleBtnClick(e) {
         console.log('Context -> this ', this);
-        console.log('Event ', e);
+        console.log('Synthetic Event ', e);
+        console.log('Native Event ', e.nativeEvent);
     }
 
     handleBtn1Click(e) {
         console.log('Context -> this ', this);
-        console.log('Event ', e);
+        console.log('Synthetic Event ', e);
+        console.log('Native Event ', e.nativeEvent);
     }
 
     handleBtnClickWithArgs(argument1, argument2, e) {
         console.log('Context -> this ', this);
-        console.log('Arguments ', argument1, argument2);
-        console.log('Event ', e);
+        console.log('Synthetic Arguments ', argument1, argument2);
+        console.log('Native Event ', e);
     }
 
 
@@ -45,7 +48,9 @@ class MoreEvents extends Component {
                 <br />
                 <button value={1} onClick={function (e) { this.handleBtnClickWithArgs('Arg value 1', 'Arg value 1', e); }.bind(this)}>{`${buttonTitle} - Arguments passed through a none function.`}</button>
                 <br />
-                <EventBtn btnText="External btn" onBtnClick={this.handleBtnClick}></EventBtn>
+                <EventBtn btnText="External btn 1" onBtnClick={this.handleBtnClick}></EventBtn>
+                <br />
+                <EventBtn2 btnText="External btn 2"></EventBtn2>
             </>
         );
     }

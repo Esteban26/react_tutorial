@@ -6,6 +6,7 @@ import EvtsWithArrowFn from './EvtsWithArrowFn';
 import LifeCycle from './LifeCycle';
 import MoreEvents from './MoreEvents';
 import FirstForm from './FirstForm';
+import References from './References';
 import { nanoid as getNanoId } from 'nanoid';
 import { makeStyles } from '@material-ui/core';
 
@@ -49,6 +50,7 @@ const MainContent = () => {
                 <EvtsWithArrowFn></EvtsWithArrowFn>
                 <LifeCycle title="Custom title"></LifeCycle>
                 <MoreEvents buttonTitle="Click me!"></MoreEvents>
+                <References></References>
                 <FirstForm></FirstForm>
             </Box>
         </Container>
