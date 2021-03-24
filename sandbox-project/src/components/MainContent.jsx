@@ -4,6 +4,8 @@ import Animal from '../components/Animal';
 import FirstClassComponent from '../components/FirstClassComponent';
 import EvtsWithArrowFn from '../components/EvtsWithArrowFn';
 import LifeCycle from '../components/LifeCycle';
+import MoreEvents from '../components/MoreEvents';
+import FirstForm from '../components/FirstForm';
 import { nanoid as getNanoId } from 'nanoid';
 import { makeStyles } from '@material-ui/core';
 
@@ -46,6 +48,8 @@ const MainContent = () => {
                 <FirstClassComponent></FirstClassComponent>
                 <EvtsWithArrowFn></EvtsWithArrowFn>
                 <LifeCycle title="Custom title"></LifeCycle>
+                <MoreEvents buttonTitle="Click me!"></MoreEvents>
+                <FirstForm></FirstForm>
             </Box>
         </Container>
     );
